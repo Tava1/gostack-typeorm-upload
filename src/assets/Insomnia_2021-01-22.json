@@ -1,0 +1,206 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-01-22T16:01:38.651Z",
+  "__export_source": "insomnia.desktop.app:v2020.3.3",
+  "resources": [
+    {
+      "_id": "req_0a75b3d4a5a346b49027870925797036",
+      "authentication": {},
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "description": "",
+            "fileName": "/home/guster/Downloads/import_template.csv",
+            "id": "pair_aacb6efff7374d37a134a873faf5d0fd",
+            "name": "file",
+            "type": "file",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1609716584875,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_a2a72a03e76e4d55b0e2dd89a3ff3680",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1608675089527,
+      "method": "POST",
+      "modified": 1609726151025,
+      "name": "import",
+      "parameters": [],
+      "parentId": "fld_c310b9b97e3a4b75b6e7eeb9da7b7ece",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url }}/transactions/import",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c310b9b97e3a4b75b6e7eeb9da7b7ece",
+      "created": 1609541115853,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1608419738444,
+      "modified": 1609541115853,
+      "name": "transactions",
+      "parentId": "wrk_f7f56e8efca1400bb0b3d624b2a186dc",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_f7f56e8efca1400bb0b3d624b2a186dc",
+      "created": 1608675006597,
+      "description": "",
+      "modified": 1608675006597,
+      "name": "N2 - Gostack Desafio ",
+      "parentId": null,
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_7d814df0adac405e97c48555596ad644",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"PS5\",\n  \"value\": 4000,\n  \"type\": \"outcome\",\n  \"category\": \"Games\"\n}\n\n"
+      },
+      "created": 1609541115878,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_87319bdf227046448180d8933f9ad85d",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1608675089477,
+      "method": "POST",
+      "modified": 1611331087271,
+      "name": "create new",
+      "parameters": [],
+      "parentId": "fld_c310b9b97e3a4b75b6e7eeb9da7b7ece",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url }}/transactions",
+      "_type": "request"
+    },
+    {
+      "_id": "req_650b189527044b1aa70d9297913f4e48",
+      "authentication": {},
+      "body": {},
+      "created": 1609700067973,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1608675089452,
+      "method": "DELETE",
+      "modified": 1609700136477,
+      "name": "delete one",
+      "parameters": [],
+      "parentId": "fld_c310b9b97e3a4b75b6e7eeb9da7b7ece",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url }}/transactions/e4169ff7-13ad-42a4-92cb-2defaf4f7965",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ac172c18f60a4b4e8ff0f4db628fd5e6",
+      "authentication": {},
+      "body": {},
+      "created": 1609541115867,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1608675089427,
+      "method": "GET",
+      "modified": 1609541115867,
+      "name": "list all",
+      "parameters": [],
+      "parentId": "fld_c310b9b97e3a4b75b6e7eeb9da7b7ece",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url }}/transactions",
+      "_type": "request"
+    },
+    {
+      "_id": "env_c702134f8a8e18da90b7e9160dce1f0e36c66716",
+      "color": null,
+      "created": 1608675006655,
+      "data": {
+        "base_url": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1608675006655,
+      "modified": 1608675054217,
+      "name": "Base Environment",
+      "parentId": "wrk_f7f56e8efca1400bb0b3d624b2a186dc",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_c702134f8a8e18da90b7e9160dce1f0e36c66716",
+      "cookies": [],
+      "created": 1608675006656,
+      "modified": 1608675006656,
+      "name": "Default Jar",
+      "parentId": "wrk_f7f56e8efca1400bb0b3d624b2a186dc",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_9a2eaa7c1966453bbfda7fcb565f49d9",
+      "contentType": "yaml",
+      "contents": "",
+      "created": 1608675006602,
+      "fileName": "N2 - Gostack Desafio ",
+      "modified": 1608675006602,
+      "parentId": "wrk_f7f56e8efca1400bb0b3d624b2a186dc",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_fe350d6909b44a6686e2058b0e82c7b3",
+      "color": "#7d69cb",
+      "created": 1608675056378,
+      "data": {
+        "base_url": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1608675056378,
+      "modified": 1608675068731,
+      "name": "dev",
+      "parentId": "env_c702134f8a8e18da90b7e9160dce1f0e36c66716",
+      "_type": "environment"
+    }
+  ]
+}
